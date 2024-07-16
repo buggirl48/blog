@@ -40,10 +40,31 @@ gtag('config', 'G-QQ6JMSNG3C');
         height: 499;
     }
     body {
-        font-family:fantasy
+        font-family:'Times New Roman', Times, serif
 }
     #intro {   
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .scrolling-banner {
+        width: 60%;
+        margin: 0 auto;
+        padding: 10px 0;
+        background-color: #ffffff;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+    }
+    
+    .scrolling-banner span {
+        display: inline-block;
+        padding-left: 15%;
+        animation: scrollText 15s linear infinite;
+    }
+    @keyframes scrollText {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
     }
 </style>
 
@@ -51,7 +72,9 @@ gtag('config', 'G-QQ6JMSNG3C');
 
 
 <body class = "light-theme">
-    
+    <div class="scrolling-banner">
+        <span> ˚₊‧꒰ა site is under construction ໒꒱ ‧₊˚</span>
+    </div>
     <center>
     
         <img id = "frequency" src = "assets/images/jsunny.jpg" alt ="freq"/>
